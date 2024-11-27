@@ -10,7 +10,7 @@ export const Servers = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     return (
-        <div className="mt-40 grid grid-cols-3 gap-3 me-20 ms-20 mb-5">
+        <div className="mt-40 grid grid-cols-3 gap-3 ms-20 mb-5">
             {servers.map((server: Server) => (
                 <ServerCard server={server} key={server._id} />
             ))}

@@ -6,6 +6,7 @@ import { FiCpu } from "react-icons/fi";
 import { useForm } from "react-hook-form";
 import { Server, useServers } from "../context/ServersContext";
 import { useNavigate } from "react-router-dom";
+import { BsRocketTakeoffFill } from "react-icons/bs";
 
 export function ServersAdd(): React.ReactElement {
     //const { user } = useAuth();
@@ -119,6 +120,20 @@ export function ServersAdd(): React.ReactElement {
                                 </div>
                             </div>
                         </div>
+                        <label
+                            htmlFor=""
+                            className="p-2 flex items-center border-emerald-400 border-2 mb-3 rounded-box"
+                        >
+                            <BsRocketTakeoffFill className="w-7 h-7 text-emerald-500 m-2" />
+                            <span className="font-bold">
+                                Set default active
+                            </span>
+                            <input
+                                type="checkbox"
+                                className="checkbox checkbox-success [--chkfg:white] ms-auto me-10"
+                                {...register("active")}
+                            />
+                        </label>
                         <div className="w-full text-center">
                             <button className="btn bg-white border-4 border-emerald-500 text-emerald-500 font-bold">
                                 <FaPlus className="w-7 h-7 text-emerald-500" />
