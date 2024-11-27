@@ -21,7 +21,6 @@ import { FiCpu } from "react-icons/fi";
 import { IoSpeedometer } from "react-icons/io5";
 import { useForm } from "react-hook-form";
 import { useEffect } from "react";
-import { redirect } from "react-router-dom";
 
 function Ubuntu() {
     return (

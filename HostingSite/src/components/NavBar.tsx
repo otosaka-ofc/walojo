@@ -108,7 +108,7 @@ function NavBar() {
                                     main?.removeAttribute("open");
                                 }}
                             >
-                                <NavLink to="/pricing">
+                                <NavLink to="/pricings/plans">
                                     <FiDollarSign className="w-5 h-5" />
                                     Pricing
                                 </NavLink>
@@ -198,7 +198,7 @@ function NavBar() {
                             <></>
                         )}
                         <li className="ms-5">
-                            <NavLink to="/pricing" className="btn font-bold">
+                            <NavLink to="/pricings/plans" className="btn font-bold">
                                 <FiDollarSign className="w-5 h-5" />
                                 Pricing
                             </NavLink>
@@ -236,7 +236,7 @@ function NavBar() {
                             </NavLink>
 
                             <NavLink
-                                to="/upgrade"
+                                to="/pricings/plans"
                                 className="btn bg-gradient-to-r from-pink-500 to-orange-500 rounded-full font-bold ms-2 text-white"
                             >
                                 <BsStars className="w-5 h-5 text-white" />

@@ -11,6 +11,7 @@ import { ServersAdd } from "./pages/ServersAdd.tsx";
 import ProtectedRoute from "./ProtectedRoute.tsx";
 import { ServerProvider } from "./context/ServersContext.tsx";
 import { Servers } from "./pages/Servers.tsx";
+import Pricing from "./pages/Pricing.tsx";
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
@@ -22,6 +23,7 @@ createRoot(document.getElementById("root")!).render(
                             <Route path="/" element={<Home />} />
                             <Route path="/auth/signup" element={<SignUp />} />
                             <Route path="/auth/login" element={<LogIn />} />
+                            <Route path="/pricings/plans" element={<Pricing/>} />
                             <Route element={<ProtectedRoute />}>
                                 <Route path="/servers" element={<Servers />} />
                                 <Route
